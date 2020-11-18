@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PatatasNCompany </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+			a {
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				color: rgba(255,255,255,1);
+			}
+		
+			#rectangulomenu {
+				fill: rgba(204,169,117,1);
+			}
+			.rectangulomenu {
+				position: absolute;
+				width: 1920px;
+				height: 104px;
+				left: 0px;
+				top: 83px;
+			}
+			#rectanguloicon {
+				fill: rgba(99,62,25,1);
+			}
+			.rectanguloicon {
+				position: absolute;
+				width: 185px;
+				height: 197px;
+				left: 58px;
+				top: 37px;
+			}
+			#icon {
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 31px;
+				top: 15px;
+				cursor: pointer;
+			}
+			#carta {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 399px;
+				top: 119px;
+				position: absolute;
+				width: 104px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#patatastitle {
+				left: 724px;
+				top: 22px;
+				position: absolute;
+				width: 473px;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 55px;
+				color: rgba(0,0,0,1);
+			}
+			#ofertas {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 658px;
+				top: 119px;
+				position: absolute;
+				width: 139px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#nosotros {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 952px;
+				top: 119px;
+				position: absolute;
+				width: 168px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#idioma {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				left: 1417px;
+				top: 95px;
+				cursor: pointer;
+			}
+			#rectanguloinicio {
+				fill: rgba(99,62,25,1);
+			}
+			.rectanguloinicio {
+				position: absolute;
+				width: 322px;
+				height: 80px;
+				left: 1548px;
+				top: 95px;
+			}
+			#iniciosesion {
+				left: 1622px;
+				top: 119px;
+				position: absolute;
+				width: 176px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#rectangulopie1 {
+				fill: rgba(204,169,117,1);
+			}
+			.rectangulopie1 {
+				position: absolute;
+				width: 1920px;
+				height: 104px;
+				left: 0px;
+				top: 976px;
+			}
+			#rectangulopie2 {
+				fill: rgba(204,169,117,1);
+			}
+			.rectangulopie2 {
+				position: absolute;
+				width: 1920px;
+				height: 104px;
+				left: 0px;
+				top: 1094px;
+			}
+			#preguntas {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 151px;
+				top: 1012px;
+				position: absolute;
+				width: 277px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#opiniones {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 566px;
+				top: 1012px;
+				position: absolute;
+				width: 314px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#informacion {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 1018px;
+				top: 1012px;
+				position: absolute;
+				width: 240px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#politicas {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 1396px;
+				top: 1012px;
+				position: absolute;
+				width: 294px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#pie {
+				left: 143px;
+				top: 1124px;
+				position: absolute;
+				width: 285px;
+				cursor: pointer;
+				text-align: center;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				color: rgba(255,255,255,1);
+			}
+			#derechos {
+				opacity: 0.7;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				left: 451px;
+				top: 1129px;
+			}
+			#redessociales {
+				filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+				left: 1038px;
+				top: 1130px;
+				position: absolute;
+				width: 457px;
+				cursor: pointer;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#twitter {
+				position: absolute;
+				width: 61px;
+				height: 61px;
+				left: 1518px;
+				top: 1119px;
+			}
+			#instagram {
+				position: absolute;
+				width: 61px;
+				height: 61px;
+				left: 1603px;
+				top: 1119px;
+			}
+		
+            #PatatasNCompanyBody{
+				background-color: #FFF3D3;
+				width: 1920px;
+				height: 1198px;
+            }
+
+			#Patatonas {
+				opacity: 0.2;
+				position: absolute;
+				width: 1788px;
+				height: 1073px;
+				left: -166px;
+				top: 147px;
+				overflow: visible;
+			}
+			#PatataGood{
+				position: absolute;
+				left:1250px;
+				top: 250px;
+				overflow: visible;
+				width:600px;
+				height: 500px;
+			}
+			#Mensaje{
+				position: absolute;
+				left: 200px;
+				top: 400px;
+				
+				align: center;
+				text-align: center;
+				
+				font-family: Times New Roman;
+				font-size: 85px;
+				font-weight: bold;
+				
+				line-height: 130px;
+			}
+			#Contacto{
+				position: absolute;
+				left:1300px;
+				top: 800px;
+				font-family: Times New Roman;
+				font-size: 40px;
+				font-weight: bold;		
+				align: center;
+				text-align: center;				
+			}
+		
+            #PatatasNCompanyBody{
+				background-color: #FFF3D3;
+				width: 1920px;
+				height: 1198px;
+            }
+
+			#Patatonas {
+				opacity: 0.2;
+				position: absolute;
+				width: 1788px;
+				height: 1073px;
+				left: -166px;
+				top: 147px;
+				overflow: visible;
+			}
+			#ComerHoy {
+				left: 203px;
+				top: 308px;
+				position: absolute;
+				overflow: visible;
+				width: 955px;
+				white-space: nowrap;
+				text-align: center;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 80px;
+				color: rgba(0,0,0,1);
+			}
+			#PatataPoker{
+				position: absolute;
+				left: 1350px;
+				top: 195px;
+				overflow: visible;
+			}
+			
+			#Seleccion{
+				position:absolute;
+				left: 220px;
+				top: 500px;
+				font-family: Times New Roman;
+				font-size: 30px;
+			}
+
+			#eco{
+				weight: 50px;
+				height: 50px;
+				position: absolute;
+				left: 600px;
+				
+				
+			}
+			#jalapeño{
+				weight: 50px;
+				height: 50px;
+				position: absolute;
+				left: 600px;
+			
+			}
+			input[type='checkbox'] { transform: scale(3); }
+			
+			
+			#Grupo_Compra {
+				position: absolute;
+				width: 349px;
+				height: 747.2px;
+				left: 1571px;
+				top: 208.4px;
+				overflow: visible;
+			}
+			#Trazado_1 {
+				fill: rgba(204,169,117,1);
+			}
+			.Trazado_1 {
+				overflow: visible;
+				position: absolute;
+				width: 349px;
+				height: 747.2px;
+				left: 0px;
+				top: 0px;
+				transform: matrix(1,0,0,1,0,0);
+			}
+			#Carrito-Compra {
+				position: absolute;
+				width: 278px;
+				height: 278px;
+				left: 36px;
+				top: 168.6px;
+				overflow: visible;
+			}
+			#Grupo_Compra-1 {
+				opacity: 0;
+				position: absolute;
+				width: 254px;
+				height: 62px;
+				left: 48px;
+				top: 528.6px;
+				overflow: visible;
+			}
+			#cuadro_Compra-1 {
+				fill: rgba(99,62,25,1);
+			}
+			.cuadro_Compra-1 {
+				position: absolute;
+				overflow: visible;
+				width: 254px;
+				height: 62px;
+				left: 0px;
+				top: 0px;
+			}
+			#Realizar_Pedido {
+				left: 25px;
+				top: 15px;
+				position: absolute;
+				overflow: visible;
+				width: 205px;
+				white-space: nowrap;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(255,255,255,1);
+			}
+			#Total_0_ {
+				left: 103px;
+				top: 446.6px;
+				position: absolute;
+				overflow: visible;
+				width: 122px;
+				white-space: nowrap;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				color: rgba(0,0,0,1);
+			}
+			#ID0 {
+				left: 175px;
+				top: 262.6px;
+				position: absolute;
+				overflow: visible;
+				width: 21px;
+				white-space: nowrap;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 40px;
+				color: rgba(0,0,0,1);
+			}
+			#Carrito {
+				left: 101px;
+				top: 73.6px;
+				position: absolute;
+				overflow: visible;
+				width: 130px;
+				white-space: nowrap;
+				text-align: left;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 40px;
+				color: rgba(0,0,0,1);
+			}
+			#Comprar {
+				position: absolute;
+				overflow: visible;
+				width: 235px;
+				white-space: nowrap;
+				text-align: left;
+				color: rgba(255,255,255,1);
+				
+				
+			}
+			#ComprarButton{
+				background-color: rgba(99,62,25,1);
+				color: rgba(255,255,255,1);
+				border: none;
+				
+				font-size: 25px;
+				font-family: Times New Roman;
+				font-style: normal;
+				font-weight: bold;
+				padding: 15px 32px;
+				height:65px;
+				
+				left: 90px;
+				top: 600px;
+				position: absolute;
+			}
+			
+			
+		</style>
+    </head>
+    <body id="PatatasNCompanyBody">
+	<div id="menucabecera">
+		<svg class="rectangulomenu">
+			<rect id="rectangulomenu" rx="0" ry="0" x="0" y="0" width="1920" height="104">
+			</rect>
+		</svg>
+		<svg class="rectanguloicon">
+			<rect id="rectanguloicon" rx="0" ry="0" x="0" y="0" width="185" height="197">
+			</rect>
+		</svg>
+		<img id="icon" src="Iproto/PatataKawaii.png" srcset="Iproto/PatataKawaii.png 1x, potato-kawaii-png@2x.png 2x">
+		<div id="carta">
+			<span><a href="ApeteceComer.html" style="text-decoration:none">CARTA</a></span>
+		</div>
+		<div id="patatastitle">
+			<span>Patatas'N Company</span>
+		</div>
+		<div id="ofertas">
+			<span>OFERTAS</span>
+		</div>
+		<div id="nosotros">
+			<span>NOSOTROS</span>
+		</div>
+		<img id="idioma" src="Iproto/España.png" srcset="Iproto/España.png 1x, pngegg@2x.png 2x">
+		<svg class="rectanguloinicio">
+			<rect id="rectanguloinicio" rx="0" ry="0" x="0" y="0" width="322" height="80">
+			</rect>
+		</svg>
+		<div id="iniciosesion">
+			<span><a href="iniciar_sesion.html" style="text-decoration:none">Iniciar Sesión</a></span>
+		</div>
+		<svg class="rectangulopie1">
+			<rect id="rectangulopie1" rx="0" ry="0" x="0" y="0" width="1920" height="104">
+			</rect>
+		</svg>
+		<svg class="rectangulopie2">
+			<rect id="rectangulopie2" rx="0" ry="0" x="0" y="0" width="1920" height="104">
+			</rect>
+		</svg>
+		<div id="preguntas">
+			<span>Preguntas Frecuentes</span>
+		</div>
+		<div id="opiniones">
+			<span>Opiniones y Sugerencias</span>
+		</div>
+		<div id="informacion">
+			<span>Información Legal</span>
+		</div>
+		<div id="politicas">
+			<span>Políticas de Privacidad</span>
+		</div>
+		<div id="pie">
+			<span>Patatas'N Company Corporation<br/>Todos los derechos reservados</span>
+		</div>
+		<img id="derechos" src="Iproto/Copyright.png" srcset="Iproto/Copyright.png 1x, kisspng-all-rights-reserved-co@2x.png 2x">
+		<div id="redessociales">
+			<span>Síguenos en nuestras redes sociales:</span>
+		</div>
+		<img id="twitter" src="Iproto/twitter.png" srcset="Iproto/twitter.png 1x, ID5a2fe479cc45e43754640849@2x.png 2x">
+		<img id="instagram" src="Iproto/Instagram.png" srcset="Iproto/Instagram.png 1x, kisspng-instagram-computer-ico@2x.png 2x">
+		</div>
+		<div>
+			<img id="Patatonas" src="Iproto/Patatonas.png" alt="Patatas sin pelar" >
+			<div id="ComerHoy">
+				<span>¿Qué deliciosa Tortilla te apetece?</span>
+			</div>
+			<img id="PatataPoker" src="Iproto/PatataPoker.png" >
+		</div>
+		
+		<div id="Seleccion">
+			<form id="Seleccion-Form">
+				<input type="checkbox" id="TortillaSinCebolla" name="Select"> &nbsp;&nbsp;
+				<label for="TortillaSinCebolla"> Tortilla de patatas sin cebolla <label>
+				<img src="Iproto/Ecologico.png" id="eco">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span> ......................... 4</span>
+				<br><br>
+				<input type="checkbox" id="TortillaConCebolla" name="Select"> &nbsp;&nbsp;
+				<label for="TortillaConCebolla"> Tortilla de patatas sin cebolla <label>
+				<img src="Iproto/Ecologico.png" id="eco">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span> ......................... 4.5</span>
+				<br><br>
+				<input type="checkbox" id="TortillaEspinacas" name="Select"> &nbsp;&nbsp;
+				<label for="TortillaEspinacas"> Tortilla de patatas sin cebolla <label>
+				<img src="Iproto/Ecologico.png" id="eco">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span> ......................... 4.5</span>
+				<br><br>
+				<input type="checkbox" id="TortillaConChorizo" name="Select"> &nbsp;&nbsp;
+				<label for="TortillaConChorizo"> Tortilla de patatas sin cebolla <label>
+				<img src="Iproto/Jalapeño.png" id="jalapeño">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span> ......................... 5</span>
+				
+				
+			</form>
+		</div>
+		
+		<div id="Grupo_Compra">
+			<svg class="Trazado_1" viewBox="0 0 349 747.2">
+				<path id="Trazado_1" d="M 0 0 L 349 0 L 349 747.2000122070313 L 0 747.2000122070313 L 0 0 Z">
+				</path>
+			</svg>
+			<img id="Carrito-Compra" src="Iproto/Carrito.png">
+			<div id="Grupo_Compra-1">
+				<svg class="cuadro_Compra-1">
+					<rect id="cuadro_Compra-1" rx="0" ry="0" x="0" y="0" width="254" height="62">
+					</rect>
+				</svg>
+				<div id="Realizar_Pedido">
+					<span>Realizar Pedido</span>
+				</div>
+			</div>
+			<div id="Total_0_">
+				<span>Total: 0 €</span>
+			</div>
+			<div id="ID0">
+				<span>0</span>
+			</div>
+			<div id="Carrito">
+				<span>Carrito</span>
+			</div>
+			<form id="Comprar">
+			<a href="totalpedido.html" style="text-decoration:none">
+				<input type="Button" id="ComprarButton" onclick="" value="Comprar">
+				</a>
+			</form>
+			
+		</div>
+		
+		
+	</body>
+</html>
